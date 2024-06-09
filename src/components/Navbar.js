@@ -9,14 +9,33 @@ export const Navbar = () => {
   };
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-between w-100 my-2 p-4 border-b-2 border-teal-600 shadow-lg ">
+      <div className=" flex flex-col md:flex-row justify-between w-100 my-2 p-4 border-b-2 border-teal-600 shadow-lg ">
         <div>
           <h4 className="nav_logo text-teal-600 font-bold cursor-pointer ">
             Jugesh Raghav
           </h4>
         </div>
+
+        <div className=" hidden mt-10 md:mt-0 md:flex gap-6 justify-between">
+          <p className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+            About
+          </p>
+          <p className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+            Experience
+          </p>
+          <p className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+            Projects
+          </p>
+          <p className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+            Resume
+          </p>
+          <p className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+            Contact Me
+          </p>
+        </div>
+
         {isOpen && (
-          <div className="flex flex-col md:flex-row mt-10 md:mt-0 gap-6 justify-between">
+          <div className="flex flex-col mt-10 md:mt-0 gap-6 justify-between md:hidden">
             <p className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
               About
             </p>

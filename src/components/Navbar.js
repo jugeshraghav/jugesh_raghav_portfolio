@@ -9,7 +9,7 @@ export const Navbar = () => {
   };
   return (
     <>
-      <div className=" flex flex-col md:flex-row justify-between w-100 my-2 p-4 border-b-2 border-teal-600 shadow-lg ">
+      <div className=" flex flex-col md:flex-row justify-between w-100 my-2 p-4 border-b-2 border-teal-600 shadow-lg">
         <div>
           <h4 className="nav_logo text-teal-600 font-bold cursor-pointer ">
             Jugesh Raghav

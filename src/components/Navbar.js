@@ -1,7 +1,6 @@
 import { RxCross2 } from "react-icons/rx";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "../App.css";
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

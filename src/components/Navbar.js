@@ -2,6 +2,7 @@ import { RxCross2 } from "react-icons/rx";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "../App.css";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const onToggleNavHandler = (e) => {
@@ -11,46 +12,64 @@ export const Navbar = () => {
     <>
       <div className=" flex flex-col md:flex-row justify-between w-100 my-2 p-4 border-b-2 border-teal-600 shadow-lg">
         <div>
-          <h4 className="nav_logo text-teal-600 font-bold cursor-pointer ">
+          <NavLink
+            to="/"
+            className="nav_logo text-teal-600 font-bold cursor-pointer "
+          >
             Jugesh Raghav
-          </h4>
+          </NavLink>
         </div>
 
         <div className=" hidden mt-10 md:mt-0 md:flex gap-6 justify-between">
-          <p className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+          <NavLink
+            to="/about"
+            className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150"
+          >
             About
-          </p>
-          <p className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+          </NavLink>
+          <NavLink
+            to="/skills"
+            className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150"
+          >
             Experience
-          </p>
-          <p className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+          </NavLink>
+          <NavLink
+            to="/projects"
+            className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150"
+          >
             Projects
-          </p>
-          <p className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+          </NavLink>
+          <NavLink
+            to="/resume"
+            className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150"
+          >
             Resume
-          </p>
-          <p className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150"
+          >
             Contact Me
-          </p>
+          </NavLink>
         </div>
 
         {isOpen && (
           <div className="flex flex-col mt-10 md:mt-0 gap-6 justify-between md:hidden">
-            <p className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+            <NavLink className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
               About
-            </p>
-            <p className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+            </NavLink>
+            <NavLink className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
               Experience
-            </p>
-            <p className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+            </NavLink>
+            <NavLink className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
               Projects
-            </p>
-            <p className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+            </NavLink>
+            <NavLink className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
               Resume
-            </p>
-            <p className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+            </NavLink>
+            <NavLink className="text-teal-600 font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
               Contact Me
-            </p>
+            </NavLink>
           </div>
         )}
 

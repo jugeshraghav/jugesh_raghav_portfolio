@@ -15,26 +15,26 @@ export const Projectcard = ({ project }) => {
 
   return (
     <>
-      <div className="w-[80%] mx-auto h-60 p-4 border-2 border-teal-600 rounded-lg flex gap-4 hover:shadow-lg hover:shadow-teal-400">
-        <div className="w-full h-full">
-          <img src={image} alt={name} className="w-[40%] h-full rounded" />
+      <div className="w-[100%] h-60 p-4 border-2 flex gap-4 shadow-lg">
+        <div className="w-[50%] h-[100%]">
+          <img src={image} alt={name} className="w-[100%] h-full rounded" />
         </div>
-        <div className="text-left flex flex-col gap-2">
-          <h4 className="font-bold text-md">{name}</h4>
-          <p className="text-sm text-teal-600">{tagline}</p>
-          <p className="text-sm text-gray-400 px-2">{description}</p>
+        <div className=" w-[50%] text-left flex flex-col gap-2">
+          <h4 className="font-bold text-xl text-teal-600">{name}</h4>
+          <p className="text-sm ">{tagline}</p>
+          {/* <p className="text-sm text-gray-400 px-2">{description}</p> */}
           <div className="flex gap-2">
-            <AiOutlineLink className="text-lg" />
-            <AiFillGithub className="text-lg" />
+            <AiOutlineLink className="text-xl" />
+            <AiFillGithub className="text-xl" />
           </div>
           <div className="flex gap-2">
             {techStack.map((technology) =>
               technology === "react" ? (
-                <DiReact className="text-lg" />
+                <DiReact className="text-xl" />
               ) : technology === "javascript" ? (
-                <DiJavascript1 className="text-lg" />
+                <DiJavascript1 className="text-xl" />
               ) : (
-                <DiCss3 className="text-lg" />
+                <DiCss3 className="text-xl" />
               )
             )}
           </div>

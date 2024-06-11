@@ -5,16 +5,16 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 export const Footer = () => {
   return (
-    <div className=" border-t-2 border-teal-600 p-2  w-100 flex flex-col gap-2 items-center ">
-      <div className="flex gap-4 ">
-        <AiFillLinkedin className="text-blue-500 text-2xl cursor-pointer w-6 h-6 rounded-lg hover:shadow-lg" />
-        <AiFillGithub className=" text-2xl cursor-pointer w-6 h-6 rounded-lg hover:shadow-lg" />
-        <AiFillInstagram className="text-pink-500 text-2xl cursor-pointer w-6 h-6 rounded-lg hover:shadow-lg" />
-        <SiLeetcode className="text-yellow-600 text-2xl cursor-pointer w-6 h-6 rounded-lg hover:shadow-lg" />
-        <AiFillTwitterCircle className="text-blue-500 text-2xl cursor-pointer w-6 h-6 rounded-lg hover:shadow-lg" />
-      </div>
+    <div className=" p-2 py-8 flex justify-between items-center">
       <div>
-        <p className="text-teal-600">Made with ❤️ by @Jugesh Raghav</p>
+        <p className="text-teal-600 text-sm">Made with ❤️ by @Jugesh Raghav</p>
+      </div>
+      <div className="flex gap-4 ">
+        <AiFillLinkedin className=" text-xl cursor-pointer w-6 h-6 rounded-lg hover:shadow-lg" />
+        <AiFillGithub className=" text-xl cursor-pointer w-6 h-6 rounded-lg hover:shadow-lg" />
+        <AiFillInstagram className=" text-xl cursor-pointer w-6 h-6 rounded-lg hover:shadow-lg" />
+        <SiLeetcode className=" text-xl cursor-pointer w-6 h-6 rounded-lg hover:shadow-lg" />
+        <AiFillTwitterCircle className=" text-xl cursor-pointer w-6 h-6 rounded-lg hover:shadow-lg" />
       </div>
     </div>
   );

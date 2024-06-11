@@ -4,7 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 export const Home = () => {
   return (
     <>
-      <div className="w-[80%]  mx-auto flex flex-col md:flex-row gap-6">
+      <div className="  mx-auto flex flex-col md:flex-row gap-6">
         <div className="flex flex-col gap-4 justify-center items-center">
           <h1 className="text-teal-600 text-3xl font-bold">
             Front-End React Developer

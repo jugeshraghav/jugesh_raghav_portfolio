@@ -21,8 +21,8 @@ export const Projectcard = ({ project }) => {
         </div>
         <div className=" w-[50%] text-left flex flex-col gap-2">
           <h4 className="font-bold text-xl text-teal-600">{name}</h4>
-          <p className="text-sm ">{tagline}</p>
-          {/* <p className="text-sm text-gray-400 px-2">{description}</p> */}
+          {/* <p className="text-sm ">{tagline}</p> */}
+          <p className="text-sm text-gray-400 px-2">{description}</p>
           <div className="flex gap-2">
             <AiOutlineLink className="text-xl" />
             <AiFillGithub className="text-xl" />

@@ -5,10 +5,11 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 export const Footer = () => {
   return (
-    <div className=" p-2 py-8 flex justify-between items-center">
+    <div className="  flex flex-col md:flex-row justify-between items-center gap-4 px-4 md:px-0">
       <div>
-        <p className="text-teal-600 text-sm">Made with ❤️ by @Jugesh Raghav</p>
+        <p className=" text-sm">Made with ❤️ by @Jugesh Raghav</p>
       </div>
+      {/* contact ooter icons */}
       <div className="flex gap-4 ">
         <AiFillLinkedin className=" text-xl cursor-pointer w-6 h-6 rounded-lg hover:shadow-lg" />
         <AiFillGithub className=" text-xl cursor-pointer w-6 h-6 rounded-lg hover:shadow-lg" />

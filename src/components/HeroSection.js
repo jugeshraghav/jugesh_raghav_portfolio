@@ -5,7 +5,7 @@ import { AiFillGithub } from "react-icons/ai";
 
 export const HeroSection = () => {
   return (
-    <div className="flex flex-col lg:flex-row-reverse md:flex-row-reverse  gap-6 justify-center items-center h-[100vh]">
+    <div className="flex flex-col lg:flex-row-reverse md:flex-row-reverse  gap-6 justify-center items-center h-[90vh]">
       {/* proile iamge for hero section --right section*/}
       <div>
         <img

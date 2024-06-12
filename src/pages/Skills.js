@@ -48,15 +48,15 @@ export const Skills = () => {
   ];
   return (
     <>
-      <div className="h-[40vh] bg-teal-50 flex flex-col gap-10 justify-center items-start">
+      <div className="h-[80vh] bg-teal-50 rounded-xl flex flex-col gap-20 justify-center items-center">
         <h1 className="text-5xl font-bold text-teal-600">
           {" "}
           Tools and Technologies{" "}
         </h1>
-        <div className="flex lex-wrap gap-4">
+        <div className="flex flex-wrap gap-10 justify-center items-center">
           {skillsArr?.map(({ id, skill, logo }) => (
             <div key={id}>
-              <img className="w-26 h-16" src={logo} alt={skill} />
+              <img className="w-40 h-30" src={logo} alt={skill} />
             </div>
           ))}
         </div>

@@ -12,8 +12,7 @@ export const projects = [
       live: "my-gram-social.netlify.app/",
       github: "https://github.com/jugeshraghav/mygram",
     },
-    image:
-      "https://img.freepik.com/free-vector/abstract-illustration-social-media-apps_52683-62412.jpg?t=st=1718104498~exp=1718108098~hmac=3d3e4f4b44a86f9cd05df89f38abc2864e530095f9856c663a4db9b7bc37c7d7&w=740",
+    image: myGram,
   },
   {
     id: 2,
@@ -27,7 +26,6 @@ export const projects = [
       live: "https://gift-arena.netlify.app/",
       github: "https://github.com/jugeshraghav/gift-arena",
     },
-    image:
-      "https://img.freepik.com/free-vector/florist-concept-sale-banner-template_23-2150044498.jpg?t=st=1718104777~exp=1718108377~hmac=e14d0dd871f1f910b4d3f5b20397c33b4e7823720057bf4035b5fb2ab856a75a&w=1380",
+    image: giftArena,
   },
 ];

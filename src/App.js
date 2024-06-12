@@ -10,14 +10,16 @@ import { Projects } from "./pages/Projects";
 
 function App() {
   return (
-    <div className=" flex flex-col  justify-center w-[100%] md:w-[70%] h-[100vh] mx-auto">
-      <div className="w-[100%] md:w-[70%] h-[10vh]  fixed top-0 z-10 pb-40">
+    <div className=" ">
+      <div className="">
         <Navbar />
       </div>
-      <div className="flex-grow w-[100%] md:w-[70%] h-calc(100vh-20vh)  ">
+      <div className="   ">
         <Home />
+        <Skills />
+        <Projects />
       </div>
-      <div className="w-[100%] md:w-[70%] h-[10vh]  ">
+      <div className=" ">
         <Footer />
       </div>
     </div>

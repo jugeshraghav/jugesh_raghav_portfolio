@@ -4,27 +4,31 @@ export const Contact = () => {
   return (
     <>
       <div className="bg-teal-50 rounded-xl flex justify-between py-8 px-16 gap-8">
-        <div className="w-2/4">
+        <div className=" mx-auto">
           <h1 className="font-bold text-5xl text-teal-600 text-center mb-6">
             Contact Me
           </h1>
-          <p className="text-sm">
+          <p className="text-sm text-center">
             Ready to code something incredible together? Drop me a line!
           </p>
-          <div>
-            <p>Address</p>
-            <p>Jagatpuri, New Delhi</p>
-            <p>India</p>
-          </div>
-          <div>
-            <p>Email</p>
-            <p>Jagatpuri, New Delhi</p>
+          <div className="flex align-center gap-6 mx-auto my-4">
+            <div className="border-2 border-teal-600 rounded-lg p-2 text-sm">
+              <p className="font-bold">Address</p>
+              <p>Jagatpuri, New Delhi, India</p>
+            </div>
+            <div className="border-2 border-teal-600 rounded-lg p-2 text-sm">
+              <p className="font-bold">Email</p>
+              <p>jugeshraghav1506@gmail.com</p>
+            </div>
+            <div className="border-2 border-teal-600 rounded-lg p-2 text-sm">
+              <p className="font-bold">Contact</p>
+              <p>+91 8619677453</p>
+            </div>
           </div>
         </div>
 
-        <form className="flex flex-col gap-6  rounded-lg w-2/4">
+        {/* <form className="flex flex-col gap-6  rounded-lg w-2/4">
           <div className="text-center">
-            <h1 className="text-teal-600 font-xl font-bold">Let's Connect</h1>
             <p className="contact-form-tagline">
               Don't be Shy, I am always at your service.
             </p>
@@ -54,7 +58,7 @@ export const Contact = () => {
             <BsFillSendFill />
             Send Message
           </button>
-        </form>
+        </form> */}
       </div>
     </>
   );

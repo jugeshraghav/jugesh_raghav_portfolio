@@ -22,16 +22,16 @@ export const Navbar = () => {
 
           <div className=" hidden mt-10 md:mt-0 md:flex gap-6 justify-between text-sm ">
             <NavLink
-              to="/about"
+              to="/"
               className=" font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150"
             >
-              About
+              Home
             </NavLink>
             <NavLink
               to="/skills"
               className=" font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150"
             >
-              Experience
+              Skills
             </NavLink>
             <NavLink
               to="/projects"
@@ -39,12 +39,7 @@ export const Navbar = () => {
             >
               Projects
             </NavLink>
-            <NavLink
-              to="/resume"
-              className=" font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150"
-            >
-              Resume
-            </NavLink>
+
             <NavLink
               to="/contact"
               className=" font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150"
@@ -55,19 +50,29 @@ export const Navbar = () => {
 
           {isOpen && (
             <div className="flex flex-col mt-10 md:mt-0 gap-6 justify-between md:hidden ease-in-out duration-200">
-              <NavLink className=" font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
-                About
+              <NavLink
+                className=" font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150"
+                to="/"
+              >
+                Home
               </NavLink>
-              <NavLink className=" font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
-                Experience
+              <NavLink
+                className=" font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150"
+                to="skills"
+              >
+                Skills
               </NavLink>
-              <NavLink className=" font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+              <NavLink
+                className=" font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150"
+                to="/projects"
+              >
                 Projects
               </NavLink>
-              <NavLink className=" font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
-                Resume
-              </NavLink>
-              <NavLink className=" font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150">
+
+              <NavLink
+                className=" font-semithin cursor-pointer hover:border-b-4 hover:border-teal-500 ease-in-out duration-150"
+                to="contact"
+              >
                 Contact Me
               </NavLink>
             </div>

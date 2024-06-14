@@ -1,6 +1,3 @@
-import { DiCss3 } from "react-icons/di";
-import { DiJavascript1 } from "react-icons/di";
-import { DiReact } from "react-icons/di";
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineLink } from "react-icons/ai";
 import { cssIcon, javascriptIcon, reactIcon } from "../constants/icons";
@@ -20,8 +17,8 @@ export const Projectcard = ({ project }) => {
       <div
         className={
           id % 2 === 0
-            ? "w-[100%] h-80 p-4  flex gap-6 flex-row-reverse justify-center items-center"
-            : "w-[100%] h-80 p-4  flex gap-6 lex-row justify-center items-center"
+            ? "w-[100%] h-80 p-4  flex gap-10 flex-row-reverse justify-between items-center"
+            : "w-[100%] h-80 p-4  flex gap-10 lex-row justify-between items-center"
         }
       >
         <div className="w-[50%] h-[100%]">
@@ -48,13 +45,21 @@ export const Projectcard = ({ project }) => {
             )}
           </div>
           <div className="flex gap-2">
-            <button className="bg-teal-600 px-2 py-1 border-2 border-teal-600 text-white hover:bg-white hover:text-teal-600 flex gap-2">
+            <a
+              className="bg-teal-600 px-2 py-1 border-2 border-teal-600 text-white hover:bg-white hover:text-teal-600 flex gap-2"
+              href={live}
+              terget="_blank"
+            >
               Live <AiOutlineLink className="text-xl" />
-            </button>
-            <button className="hover:bg-teal-600 px-2 py-1 border-2 border-teal-600 hover:text-white bg-white text-teal-600 flex gap-2">
+            </a>
+            <a
+              className="hover:bg-teal-600 px-2 py-1 border-2 border-teal-600 hover:text-white bg-white text-teal-600 flex gap-2"
+              href={github}
+              terget="_blank"
+            >
               Source Code
               <AiFillGithub className="text-xl" />
-            </button>
+            </a>
           </div>
         </div>
       </div>

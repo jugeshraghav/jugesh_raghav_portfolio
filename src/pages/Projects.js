@@ -15,7 +15,7 @@ export const Projects = () => {
         </h1>
       </div>
 
-      <div className="flex flex-col gap-16 w-[70%] mx-auto">
+      <div className="flex flex-col gap-16 w-[80%] mx-auto">
         {projectsArr?.map((project) => (
           <Projectcard project={project} key={project?.id} />
         ))}

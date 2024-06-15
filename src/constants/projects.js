@@ -9,7 +9,7 @@ export const projects = [
       "Leveraged React, Reducers, Context API, Router, Tailwind CSS, and JavaScript to build a dynamic social platform. Implemented robust functionalities including user profiles, search, follow/unfollow, and post CRUD operations.",
     techStack: ["react", "tailwind", "javascript"],
     link: {
-      live: "my-gram-social.netlify.app/",
+      live: "https://my-gram-social.netlify.app/",
       github: "https://github.com/jugeshraghav/mygram",
     },
     image: myGram,

@@ -48,14 +48,14 @@ export const Projectcard = ({ project }) => {
             <a
               className="bg-teal-600 px-2 py-1 border-2 border-teal-600 text-white hover:bg-white hover:text-teal-600 flex gap-2"
               href={live}
-              terget="_blank"
+              target="_blank"
             >
               Live <AiOutlineLink className="text-xl" />
             </a>
             <a
               className="hover:bg-teal-600 px-2 py-1 border-2 border-teal-600 hover:text-white bg-white text-teal-600 flex gap-2"
               href={github}
-              terget="_blank"
+              target="_blank"
             >
               Source Code
               <AiFillGithub className="text-xl" />
